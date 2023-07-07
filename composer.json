@@ -1,0 +1,24 @@
+{
+    "name": "mosx/dnsinfo-service",
+    "description": "Functionality to get dns information about specific website",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Slawik",
+            "email": "s.sivinyuk@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "MosxTech\\DnsInfoService\\": "src/"            
+        }
+    },    
+    "require": {
+        "phpunit/phpunit": "^10.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.2"
+    }
+}
