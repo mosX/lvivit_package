@@ -1,8 +1,6 @@
 <?php 
 	namespace MosxTech\DnsInfoService;			  
 
-	$result = dns_get_record('google.com');
-
 	/**
 	 * Get the Dns Info by Url
 	 *	 
@@ -17,9 +15,10 @@
 		}
 		/** 
 		 * @param string
-		 * @return mixed
+		 * @return array|boolean
 		 */
 		public function getDnsInfo($url){
+			if(!$url) return false;
 			$result = dns_get_record($url);
 			return $result;
 		}
